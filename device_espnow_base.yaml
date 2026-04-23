@@ -1,0 +1,76 @@
+substitutions: # generic substitutions
+  wifi_fast_connect: "false"                      # Enables faster network connections, with last connected SSID being connected to and no full scan for SSID being undertaken
+  ap_timeout: 1min
+  power_save_mode: none
+  reboot_timeout: 2min
+  flash_write_interval: 10min
+
+  timezone: "Asia/Manila"                         # Set timezone of the device. Can be entered in unix Country/Area format (i.e. "Australia/Sydney")
+  esp_wifi_scan_internal: true                    # set to false to show the full wifi scan results
+
+# esphome:
+#   name: ${device_id}
+#   build_path: ./build/${device_id}
+
+# ${platform}:
+#   board: ${board}
+
+# preferences:
+#   flash_write_interval: ${flash_write_interval}
+
+packages:
+  #wifi:
+    #url: https://github.com/Cahlil-Togonon/Smart-iLAB
+    #ref: main
+    #file: packages/base_packages/wifi.yaml
+    #refresh: 5min
+  #api:
+    #url: https://github.com/Cahlil-Togonon/Smart-iLAB
+    #ref: main
+    #file: packages/base_packages/api.yaml
+    #refresh: 5min
+  safe_mode:
+    url: https://github.com/Cahlil-Togonon/Smart-iLAB
+    ref: main
+    file: packages/base_packages/safe_mode.yaml
+    refresh: 5min
+  ota:
+    url: https://github.com/Cahlil-Togonon/Smart-iLAB
+    ref: main
+    file: packages/base_packages/ota.yaml
+    refresh: 5min
+  logger:
+    url: https://github.com/Cahlil-Togonon/Smart-iLAB
+    ref: main
+    file: packages/base_packages/logger.yaml
+    refresh: 5min
+  web_server:
+    url: https://github.com/Cahlil-Togonon/Smart-iLAB
+    ref: main
+    file: packages/base_packages/web_server.yaml
+    refresh: 5min
+  binary_sensor:
+    url: https://github.com/Cahlil-Togonon/Smart-iLAB
+    ref: main
+    file: packages/base_packages/binary_sensor.yaml
+    refresh: 5min
+  sensor:
+    url: https://github.com/Cahlil-Togonon/Smart-iLAB
+    ref: main
+    file: packages/base_packages/sensor.yaml
+    refresh: 5min
+  button:
+    url: https://github.com/Cahlil-Togonon/Smart-iLAB
+    ref: main
+    file: packages/base_packages/button.yaml
+    refresh: 5min
+  text_sensor:
+    url: https://github.com/Cahlil-Togonon/Smart-iLAB
+    ref: main
+    file: packages/base_packages/text_sensor.yaml
+    refresh: 5min
+  # time:
+  #   url: https://github.com/Cahlil-Togonon/Smart-iLAB
+  #   ref: main
+  #   file: packages/base_packages/time.yaml
+  #   refresh: 5min
