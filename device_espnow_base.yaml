@@ -18,6 +18,13 @@ substitutions: # generic substitutions
 # preferences:
 #   flash_write_interval: ${flash_write_interval}
 
+wifi:
+  ap:
+    password: !secret ap_password
+    ap_timeout: 1min
+  power_save_mode: none
+  reboot_timeout: 0s
+
 packages:
   #wifi:
     #url: https://github.com/Cahlil-Togonon/Smart-iLAB
